@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Favourite Destination - Japan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #ffdde1, #ee9ca7, #fbc2eb);
+            background-size: 400% 400%;
+            animation: gradientShift 10s ease infinite;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(10px);
+            padding: 35px 40px;
+            border-radius: 24px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+        }
+
+        h1 {
+            text-align: center;
+            color: #d6001c;
+            font-size: 42px;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        .sub-heading {
+            text-align: center;
+            color: #888;
+            font-size: 16px;
+            margin-bottom: 20px;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        /* 🌸 Image Styling */
+        .image-section {
+            margin: 15px 0 20px 0;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .image-section img {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .image-section img:hover {
+            transform: scale(1.02);
+        }
+
+        h2 {
+            color: #333;
+            margin-top: 22px;
+            margin-bottom: 10px;
+            font-size: 26px;
+            border-left: 5px solid #d6001c;
+            padding-left: 14px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 12px;
+        }
+
+        .highlight {
+            color: #d6001c;
+            font-weight: bold;
+        }
+
+        .facts-box {
+            background: linear-gradient(135deg, #fff5f5, #fce4ec);
+            border-radius: 16px;
+            padding: 20px 25px;
+            margin: 18px 0 10px 0;
+            border-left: 5px solid #d6001c;
+        }
+
+        .facts-box h3 {
+            color: #d6001c;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .facts-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .facts-box ul li {
+            font-size: 17px;
+            line-height: 2;
+            color: #444;
+            padding-left: 8px;
+        }
+
+        .facts-box ul li::before {
+            content: "🌸 ";
+            font-size: 18px;
+        }
+
+        .facts-box ul li .highlight {
+            font-weight: 600;
+        }
+
+        .footer {
+            margin-top: 28px;
+            padding-top: 18px;
+            border-top: 2px solid #f0f0f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .footer .love {
+            color: #888;
+            font-size: 15px;
+        }
+
+        .footer .love i {
+            font-style: normal;
+            color: #d6001c;
+        }
+
+        .footer .badge {
+            background: #d6001c;
+            color: white;
+            padding: 6px 18px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 30px;
+            }
+            .image-section img {
+                height: 220px;
+            }
+            p {
+                font-size: 16px;
+            }
+            .facts-box ul li {
+                font-size: 15px;
+            }
+            .footer {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🇯🇵 My Favourite Destination</h1>
+        <p class="sub-heading">日本 — The Land of the Rising Sun</p>
+
+        <!-- ✅ IMAGE - Ab sahi path daala hai -->
+        <div class="image-section">
+            <img 
+                src="japan.jpg" 
+                alt="Beautiful Japan" 
+            />
+        </div>
+
+        <h2>📍 About Japan</h2>
+        <p>
+            Japan is a beautiful island country located in <span class="highlight">East Asia</span>.
+            It is famous for its <span class="highlight">rich culture</span>,
+            <span class="highlight">advanced technology</span>,
+            <span class="highlight">delicious food</span>, and
+            <span class="highlight">beautiful natural places</span>.
+        </p>
+        <p>
+            The capital city of Japan is <span class="highlight">Tokyo</span>.
+            Japan is known for <span class="highlight">Mount Fuji</span>,
+            <span class="highlight">cherry blossoms (Sakura)</span>,
+            anime, manga, bullet trains, robotics and traditional temples.
+        </p>
+
+        <div class="facts-box">
+            <h3>📋 Quick Facts</h3>
+            <ul>
+                <li><span class="highlight">Capital:</span> Tokyo</li>
+                <li><span class="highlight">Currency:</span> Japanese Yen (¥)</li>
+                <li><span class="highlight">Language:</span> Japanese</li>
+                <li><span class="highlight">Population:</span> ~125 million</li>
+                <li><span class="highlight">Famous for:</span> Sushi, Samurai, Shinkansen</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <div class="love">
+                <i>❤️</i> Made with love for Japan
+            </div>
+            <div class="badge">
+                🇯🇵 いつでも
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
